@@ -17,6 +17,18 @@ When creating components, you have the choice between **two different ways**:
 
 you should use 1) as often as possible though. It's the best-practice.
    
+### Working with props
+Changes from OUTSIDE a Component (data passed into component)
+
+`<Person name="Bob" age="27" />`   
+`name` and `age` are the prop names, "Bob" and "27" are the prop values
+
+```
+const person = (props) => {
+    return <p>I'm {props.name} and I am {props.age} years old!</p>
+};
+```
+props is the argument passed to component function (in class based component is this.props)   
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
