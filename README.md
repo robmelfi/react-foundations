@@ -1,5 +1,10 @@
 # React Foundations
 
+[Components](#components)
+- [Props and State](#props-and-state)   
+
+[Available Scripts](#available-scripts)
+
 ## Components
 
 Components are the core building block of React apps. Actually, React really is just a library for creating components in its core.
