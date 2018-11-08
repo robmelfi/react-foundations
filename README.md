@@ -17,18 +17,63 @@ When creating components, you have the choice between **two different ways**:
 
 you should use 1) as often as possible though. It's the best-practice.
    
-### Working with props
-Changes from OUTSIDE a Component (data passed into component)
+### Props and State
 
-`<Person name="Bob" age="27" />`   
-`name` and `age` are the prop names, "Bob" and "27" are the prop values
+`props` and `state` are CORE concepts of React. Actually, only changes in `props` and/or `state` trigger React to re-render your components and potentially update the DOM in the browser.
+
+#### Props
+
+`props` allow you to pass data from a parent (wrapping) component to a child (embedded) component.
+
+##### Example:
+
+##### People Component
+```
+const people = (props) => {
+    return (
+        <div>
+            <Person name="Bob" />
+        </div>
+    );
+};
+```
+Here, `name` is the custom property ( prop ) set up on the custom Person component. We basically replicate the default HTML attribute behavior we already know (e.g. <input type="text"> informs the browser about how to handle that input).
+
+##### Person Component
 
 ```
 const person = (props) => {
-    return <p>I'm {props.name} and I am {props.age} years old!</p>
+    return <p>I'm {props.name}!</p>
 };
 ```
-props is the argument passed to component function (in class based component is this.props)   
+
+The Person component receives the props argument. You can of course name this argument whatever you want - it's your function definition, React doesn't care! But React will pass one argument to your component function => An object, which contains all properties you set up on <Person ... />.
+
+`{props.name}` then dynamically outputs the name property of the props object - which is available since we set the name property inside People component (see above).
+
+#### State
+Whilst props allow you to pass data down the component tree (and hence trigger an UI update), state is used to change the component, well, state from within. Changes to state also trigger an UI update.
+
+````
+class NewPost extends Component { // state can only be accessed in class-based components!
+    state = {
+        counter: 1
+    };  
+ 
+    render () { // Needs to be implemented in class-based components! Needs to return some JSX!
+        return (
+            <div>{this.state.counter}</div>
+        );
+    }
+}
+````
+
+Here, the `NewPost` component contains `state`. Only class-based components can define and use `state`. You can of course pass the state down to functional components, but these then can't directly edit it.
+
+`state` simply is a property of the component class, you have to call it `state` though - the name is not optional. You can then access it via `this.state` in your class JSX code (which you return in the required `render()` method).
+
+Whenever `state` changes, the component will re-render and reflect the new state. The difference to `props` is, that this happens within one and the same component - you don't receive new data (`props`) from outside!
+
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
