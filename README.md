@@ -79,6 +79,15 @@ Here, the `NewPost` component contains `state`. Only class-based components can 
 
 Whenever `state` changes, the component will re-render and reflect the new state. The difference to `props` is, that this happens within one and the same component - you don't receive new data (`props`) from outside!
 
+##### Manipulating the state
+
+“state” is a reserved property name (and can only be set in class-based components!)
+
+`state = {submitted: false}`
+
+Mutate state & trigger re-render
+
+`someMethod () { this.setState({submitted: true}) }`
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
