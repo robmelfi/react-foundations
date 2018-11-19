@@ -89,10 +89,10 @@ Mutate state & trigger re-render
 
 `someMethod () { this.setState({submitted: true}) }`
 
-#### Passing method references between components
-
-Check [87066fa](https://github.com/robmelfi/react-foundations/commit/87066fa9454743c786f50e003dbfc8db3e3a5a68)
-
+##### Passing method references between components [87066fa](https://github.com/robmelfi/react-foundations/commit/87066fa9454743c786f50e003dbfc8db3e3a5a68)
+##### Adding two way binding [b76d3c8](https://github.com/robmelfi/react-foundations/commit/b76d3c8b440bd7274fd6cd6f7472dc0862d48a70)
+##### Adding styling with stylesheet [021bc87](https://github.com/robmelfi/react-foundations/commit/021bc87433857cd3bfd7c612cc7e370495a9596d)
+##### Working with inline style [8c9d8c1](https://github.com/robmelfi/react-foundations/commit/8c9d8c1c18d7961cb10c1bb628d3a739953c9ddf)
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
