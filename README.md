@@ -88,6 +88,10 @@ Whenever `state` changes, the component will re-render and reflect the new state
 Mutate state & trigger re-render
 
 `someMethod () { this.setState({submitted: true}) }`
+
+#### Passing method references between components
+
+Check 87066fa9454743c786f50e003dbfc8db3e3a5a68
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
