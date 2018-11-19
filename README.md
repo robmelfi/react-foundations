@@ -1,7 +1,8 @@
 # React Foundations
 
 [Components](#components)
-- [Props and State](#props-and-state)   
+- [Props and State](#props-and-state)
+- [Working with List & Conditional](#working-with-list--conditional)   
 
 [Available Scripts](#available-scripts)
 
@@ -93,6 +94,25 @@ Mutate state & trigger re-render
 ##### Adding two way binding [b76d3c8](https://github.com/robmelfi/react-foundations/commit/b76d3c8b440bd7274fd6cd6f7472dc0862d48a70)
 ##### Adding styling with stylesheet [021bc87](https://github.com/robmelfi/react-foundations/commit/021bc87433857cd3bfd7c612cc7e370495a9596d)
 ##### Working with inline style [8c9d8c1](https://github.com/robmelfi/react-foundations/commit/8c9d8c1c18d7961cb10c1bb628d3a739953c9ddf)
+
+### Working with List & Conditional
+```
+let conditionalContent = null
+if (someThing === true) {
+    conditionalContent = <p>Visible Content!</p>
+}
+
+...
+
+<div>
+    <p>Other Visible Content</p>
+    { conditionalContent }
+</div>
+```
+
+
+
+
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
