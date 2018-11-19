@@ -96,6 +96,7 @@ Mutate state & trigger re-render
 ##### Working with inline style [8c9d8c1](https://github.com/robmelfi/react-foundations/commit/8c9d8c1c18d7961cb10c1bb628d3a739953c9ddf)
 
 ### Working with List & Conditional
+#### Rendering Content Conditionally
 ```
 let conditionalContent = null
 if (someThing === true) {
@@ -109,8 +110,9 @@ if (someThing === true) {
     { conditionalContent }
 </div>
 ```
+check [2cc4d9d](https://github.com/robmelfi/react-foundations/commit/2cc4d9d2f1f0110a16722518ceafc7c9d1444d6e)
 
-
+#### Outputting Lists
 
 
 ___
