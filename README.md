@@ -4,6 +4,10 @@
 - [Props and State](#props-and-state)
 - [Working with List & Conditional](#working-with-list--conditional)   
 
+[Debugging React apps](#debugging-react-apps)
+
+[Diving Deeper](#diving-deeper)
+
 [Available Scripts](#available-scripts)
 
 ## Components
@@ -131,6 +135,19 @@ check [dc1d970](https://github.com/robmelfi/react-foundations/commit/dc1d970b158
 ##### Update property of object's list
 
 check [9f893cc](https://github.com/robmelfi/react-foundations/commit/9f893cc1aae1eb4f9200639dbb34d2895436e108)
+
+## Debugging React apps
+
+...
+
+## Diving deeper
+
+...
+
+## Redux
+
+...
+
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
