@@ -114,7 +114,23 @@ check [2cc4d9d](https://github.com/robmelfi/react-foundations/commit/2cc4d9d2f1f
 
 #### Outputting Lists
 
+check [aa2559f](https://github.com/robmelfi/react-foundations/commit/aa2559f116ec92ee4a451aa85f08ad10affcee31)
 
+##### Add delete handler
+
+check [098c93a](https://github.com/robmelfi/react-foundations/commit/098c93a18ff2dad6f56af6ae9d21d447417f3f33)
+
+##### Update state immutably
+
+check [c0efe9f](https://github.com/robmelfi/react-foundations/commit/c0efe9f85ad767f2695310f2115018fb1885945e)
+
+##### Add keys to List
+
+check [dc1d970](https://github.com/robmelfi/react-foundations/commit/dc1d970b158ec0c28a1f8aad7d716b8497ed93b4)
+
+##### Update property of object's list
+
+check [9f893cc](https://github.com/robmelfi/react-foundations/commit/9f893cc1aae1eb4f9200639dbb34d2895436e108)
 ___
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
